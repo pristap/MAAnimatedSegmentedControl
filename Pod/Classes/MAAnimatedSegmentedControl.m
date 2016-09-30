@@ -35,7 +35,7 @@
 
 - (void)setupView
 {
-    self.layer.cornerRadius = self.frame.size.height / 2;
+    
     self.layer.borderWidth = 2.f;
     
     self.backgroundColor = [UIColor clearColor];
@@ -173,6 +173,7 @@
     self.thumbView.frame = rect;
     self.thumbView.backgroundColor = self.thumbColor;
     self.thumbView.layer.cornerRadius = rect.size.height / 2;
+    self.layer.cornerRadius = self.frame.size.height / 2;
     self.layer.borderColor = self.borderColor.CGColor;
     
     [self displayNewSelectedIndex];
